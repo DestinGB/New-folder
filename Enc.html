@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bento Grids</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div class="grid-container">
+    <div class="box" style="grid-area: box-1;">
+        <h1>Encrypto</h1>
+        <ul>
+            <li class="active" id="enc">Encryption</li>
+            <li class="dec">Decryption</li>
+            <li class="item">More</li>
+        </ul>
+    </div>
+    <div class="box" style="grid-area: box-2;" id="upload">
+        <span>📁</span>
+        <h2 id="click-sentence">Click to select files</h2>
+        <p>supports all file formats</p>
+        <input type="file" style="display: none;" id="fileInput">
+    </div>
+    <div class="box" style="grid-area: box-3;">
+        <p id="name"></p> 
+        <p id="size"></p>
+    </div>
+
+
+    <div class="box num4" style="grid-area: box-4;">
+        <input type="password" id="password" required placeholder="Enter Password"/>
+    <button class="submit">OK</button>
+    </div>
+
+    <div class="box icon" style="grid-area: box-5;" id="Information-Box">
+        <img src="Images/Infoo.svg" class="acc" title="Info">
+    </div>
+    </div>
+
+    <div class="Information" id="Information">
+        <b title="Back" id="back">&#x2190;</b>
+        <h2 style="font-weight: 600; font-size: 2.5em;">Encrypto</h2>
+        <p>Encrypto is an easy fix solution to securing and storing of sensitive data at your convinience</p>
+        <h4 style="text-decoration: underline; color: #18ce; font-weight: 800;">How To Use</h4>
+        <p>Simply click the 📁 icon and upload the file you'd like to Encrypt/Decrypt. The system will condense or decondense your files with the correct password initially given when uploading. A download icon is available whenever you wish to retrieve your files.</p>
+        <p>If something isn't functioning properly <a href="#">click here</a></p>
+        
+                <h3>Founders</h3>
+            <p class="items">Destin Banda</p>
+            <p class="items">Carlos Sinjani</p>
+    </div>
+    <script src="Scripts.js"></script>
+</body>
+</html>
